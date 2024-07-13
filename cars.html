@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARS</title>
+    <link rel="stylesheet" href="./Css/Cars.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.css">
+</head>
+<body onload="move()">
+    
+    <header>
+        <h1 class="logo">GROUP4</h1>
+
+        <div class="search">
+            <i class="fa fa-search" onclick="search()"></i>
+
+            
+                <div class="input" >
+                    <input type="search" placeholder="search here" class="searchbar">
+                    <button>search</button>
+                    <a  style="margin-left: 1rem; text-decoration: none;"   class="close" href="">&times;</a>
+                 </div>
+             
+        </div>
+
+             
+        <i class="fa fa-bars" onclick="document.getElementById('menulist').style.display='block';"></i>
+        <div class="menu"  id="menulist">
+           
+            <ul class="menulist" >
+                <span class="close" onclick="document.getElementById('menulist').style.display='none';">&times</span>
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./cars.html">CARS</a></li>
+                <li><a href="/About.html">ABOUT US</a></li>
+                <li><a href="./service.html">SERVICES</a></li>
+                <li><a href="./contact.html">CONTACT & FAQS</a></li>
+
+        
+               
+            </ul>
+        </div>
+
+    </header>
+
+<!-- pannel & side icon -->
+
+
+<div class="pannel">
+    <div class="message">
+        <i class="fa fa-phone"></i>
+        <p>Report</p>
+    </div>
+
+    <div class="message">
+        <i class="fa fa-envelope"></i>
+        <p>email</p>
+    </div>
+
+    <div class="message">
+        <i class="fab fa-whatsapp"></i>
+        <p>whatsapp</p>
+    </div>
+
+    <div class="message">
+        <i class="fa fa-location"></i>
+        <p>Location</p>
+    </div>
+</div> 
+
+<div class="side-icon">
+    <a href="./message.html"><i class="fa fa-message"></i></a>
+</div>
+
+
+
+
+<!-- main -->
+
+<div class="banner">
+    <img src="./assets/lady smile.jpg" alt="">
+
+        <div class="name">
+            <h1>CARS</h1>
+        </div>
+</div>
+
+<div class="select">
+    <select name="" id="select">
+        <option value="">Select Brand</option>
+        <option value="all">All Brands</option>
+        <option value="toyota">Toyota</option>
+        <option value="others"> Others</option>
+        <option value="vw">Volkswagen</option>
+        
+    </select>
+</div>
+
+
+
+    <section>
+        <!-- <h1>ALL BRANDS</h1> -->
+        <div class="all" style="display: none;">
+            <h1>ALL BRANDS</h1>
+                <div class="cars">
+                    <img src="./assets/bora-1.jpg" alt="">
+                    <figcaption>Volkswagen Bora</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/Camry-12.jpg" alt="">
+                    <figcaption>Toyota Camry</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/corolla-6.jpg" alt="">
+                    <figcaption>Toyota Corolla</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/dargo-ev-5.jpg" alt="">
+                    <figcaption>Haval Dargo</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/Elantra8.jpg" alt="">
+                    <figcaption>Hyndai Elantra</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/EQA260-6.png" alt="">
+                    <figcaption>Benz EQA</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/H6-13.jpg" alt="">
+                    <figcaption>Haval 6</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/jettava3-14.jpg" alt="">
+                    <figcaption>jettava</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/KIA-Sportage-1.jpg" alt="">
+                    <figcaption>Kia Sportage</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/monza-1.jpg" alt="">
+                    <figcaption>Kia chivrolet Monza</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/Tayron-PHEV-8.png" alt="">
+                    <figcaption>Volkswagen Tayron</figcaption>
+                </div>
+<!-- 
+                <div class="cars">
+                    <img src="./assets/Tayron-PHEV-8.png" alt="">
+                    <figcaption>Volkswagen Tayron</figcaption>
+                </div> -->
+
+                <div class="cars">
+                    <img src="./assets/Toyota-RAV4-14.jpg" alt="">
+                    <figcaption>Toyota RAV4</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/Volkswagen-Tayron-PHEV-2.png" alt="">
+                    <figcaption>Volkswagen-Tayron-PHEV</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/探界者PLUS-4.jpg" alt="">
+                    <figcaption>Chivrolet Plus</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/雷达RD6-15.jpg" alt="">
+                    <figcaption>Radar RD6</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/零跑t03-6.jpg" alt="">
+                    <figcaption>TO3 mini sport</figcaption>
+                </div>
+
+                <div class="cars">
+                   <img src="./assets/火星9-14 (1).jpg" alt="">
+                    <figcaption>9 fast</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/深蓝s7-22.jpg" alt="">
+                    <figcaption>S7 G pro</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/开拓者-8.jpg" alt="">
+                    <figcaption>Chivrolet Black SE</figcaption>
+                </div>
+
+                <div class="cars">
+                    <img src="./assets/五菱缤果-12.jpg" alt="">
+                    <figcaption>TO4 mini sport</figcaption>
+                </div>
+
+
+
+        </div>
+
+
+        <div class="toyota" style="display: none;">
+            <h1>TOYOTA</h1>
+            
+            <div class="cars">
+                <img src="./assets/Camry-12.jpg" alt="">
+                <figcaption>Toyata Camry</figcaption>
+            </div>
+
+            
+            <div class="cars">
+                <img src="./assets/Toyota-RAV4-14.jpg" alt="">
+                <figcaption>Toyota RAV4</figcaption>
+            </div>
+
+            
+            <div class="cars">
+                <img src="./assets/corolla-6.jpg" alt="">
+                <figcaption>Toyota Corolla</figcaption>
+            </div>
+
+
+
+        </div>
+
+
+
+        <div class="vw" style="display: none;">
+            <h1>VOLKSWAGEN</h1>
+
+            <div class="cars">
+                <img src="./assets/bora-1.jpg" alt="">
+                <figcaption>Volkswagen Bora</figcaption>
+            </div>
+            
+            <div class="cars">
+                <img src="./assets/Volkswagen-Tayron-PHEV-2.png" alt="">
+                <figcaption>Volkswagen-Tayron-PHEV</figcaption>
+            </div>
+            
+            <div class="cars">
+                <img src="./assets/Tayron-PHEV-8.png" alt="">
+                <figcaption>Volkswagen Tayron</figcaption>
+            </div>
+            
+
+
+
+        </div> 
+
+
+        <div class="others">
+            <h1>  OTHER BRANDS</h1>
+
+            <div class="cars">
+                <img src="./assets/五菱缤果-12.jpg" alt="">
+                <figcaption>TO4 mini sport</figcaption>
+            </div>
+
+            
+            <div class="cars">
+                <img src="./assets/探界者PLUS-4.jpg" alt="">
+                <figcaption>Chivrolet Plus</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/雷达RD6-15.jpg" alt="">
+                <figcaption>Radar RD6</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/零跑t03-6.jpg" alt="">
+                <figcaption>TO3 mini sport</figcaption>
+            </div>
+
+            <div class="cars">
+               <img src="./assets/火星9-14 (1).jpg" alt="">
+                <figcaption>9 fast</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/深蓝s7-22.jpg" alt="">
+                <figcaption>S7 G pro</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/开拓者-8.jpg" alt="">
+                <figcaption>Chivrolet Black SE</figcaption>
+            </div>
+
+            
+            <div class="cars">
+                <img src="./assets/dargo-ev-5.jpg" alt="">
+                <figcaption>Haval Dargo</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/Elantra8.jpg" alt="">
+                <figcaption>Hyndai Elantra</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/EQA260-6.png" alt="">
+                <figcaption>Benz EQA</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/H6-13.jpg" alt="">
+                <figcaption>Haval 6</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/jettava3-14.jpg" alt="">
+                <figcaption>jettava</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/KIA-Sportage-1.jpg" alt="">
+                <figcaption>Kia Sportage</figcaption>
+            </div>
+
+            <div class="cars">
+                <img src="./assets/monza-1.jpg" alt="">
+                <figcaption>Kia chivrolet Monza</figcaption>
+            </div>
+
+
+
+
+
+        </div>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+    
+    <footer>
+
+        <div class="contact">
+
+            <div class="con">
+                <i class="fab fa-whatsapp"></i>
+
+                <span>
+                    <h3>whatsapp No.</h3>
+                    <p>O592904837</p>
+                </span>
+             </div>   
+
+            <div class="con">
+                <i class="fa fa-envelope"></i>
+
+                <span>
+                    <h3>Write to us</h3>
+                    <p>francisaasiedu247@gmail.com</p>
+                </span>
+            
+
+            </div>
+
+            <div class="con">
+                <i class="fa fa-location"></i>
+
+                <span>
+                    <h3>Address</h3>
+                    <p>Takoradi,Ghana</p>
+                </span>
+            
+
+            </div>
+
+        </div>
+
+        <div class="container">
+        <div class="brands">
+            <h1>GROUP 4</h1>
+            <p>A professional automobile import and Exportsales
+                service company from Ghana.
+            </p>
+            <icon>
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-whatsapp"></i>
+                <i class="fab fa-instagram"></i>
+            </icon>
+        </div>
+
+        <div class="other">
+            <div class="car-cart">
+                <h2>cars</h2>
+               <li><a href="">Electric Vehicles</a></li>
+               <li><a href=""> Diesel Vehicles</a></li>
+               <li><a href="">Petrol Vehicles</a></li>
+            </div>
+
+            <div class="other-explore">
+                <h2>Explore</h2>
+                <li><a href="">Cars</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">contact Us</a></li>
+            </div>
+
+
+        </div>
+
+
+
+
+            <div class="quick-note">
+                <h1>Quick Quote</h1>
+                <form action="https://formsubmit.co/francisasiedu247@gmail.com" method="POST">
+                    <input type="text" placeholder="Name*" required><br>
+                    <input type="email" placeholder="Email*" required><br>
+                    <textarea name="" id="" placeholder="Message*"></textarea><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+            </div>
+
+            <hr>
+
+            <div class="copyright">
+            <p>©Copyright 2024 Murda Tech</p>
+            <p>Private policy</p>
+            </div>
+
+
+    </footer><br><br>
+    <marquee behavior="" direction="">Quality Cars,Good city drive🚗</marquee>
+
+
+
+ 
+    <script>
+      
+// var btn=document.getElementById('btn');
+var menu=document.getElementById('menulist');
+
+
+window.onclick=function(){
+    if (event.target==menu) {
+        menu.style.display='none';
+    }
+}
+
+
+        var input=document.querySelector('.input');
+
+        function search() {
+            input.classList.toggle('input-toggle')
+        }
+      
+        //select
+
+        const select=document.getElementById('select');
+        var All=document.querySelector('.all');
+        var Toyota=document.querySelector('.toyota');
+        var vw=document.querySelector('.vw');
+        var others=document.querySelector('.others');
+
+        select.addEventListener('change', (event)=>{
+        
+            let selected=event.target.value;
+
+            if (selected==='all') {
+                All.style.display='grid';
+            } else {
+                All.style.display='none';
+            }
+
+            if (selected==='toyota') {
+                Toyota.style.display='grid';
+            } else {
+                Toyota.style.display='none';
+            }
+            
+            if (selected==='others') {
+                others.style.display='grid';
+            } else {
+                others.style.display='none';
+            }
+            
+                        if (selected==='vw') {
+                            vw.style.display='grid';
+                        } else {
+                            vw.style.display='none';
+                        }
+            
+
+
+        })
+
+         // draggable
+         var dragValue;
+            function move() {
+                var element=document.querySelector('.side-icon');
+                element.style.position="absolute";
+
+                element.onmousedown=function(){
+                    dragValue=element;
+                }
+            }
+
+            document.onmouseup=function(){
+                dragValue=null;
+            }
+            document.onmousemove=function (e) {
+                var x=e.pageX;
+                var y=e.pageY;
+
+                dragValue.style.left=x + "px";
+                dragValue.style.top=y + "px";
+            }
+
+
+
+
+    </script>
+
+    
+</body>
+</html>

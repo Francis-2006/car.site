@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESSAGE</title>
+    <link rel="stylesheet" href="./Css/message.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.css">
+
+</head>
+<body>
+    <header>
+        <a class="close" href="#">&times;</a>
+    </header>
+    <div class="text">
+       <p>Leave us a message below,We will contact you as 
+        soon as possible😀</p>
+    </div>
+    
+    <div class="form-cont">
+        <form action="https://formsubmit.co/francisasiedu247@gmail.com" method="post">
+        <input type="text" placeholder="*Name" required><br>
+        <input type="email" placeholder="*Email" required><br>
+        <input type="tel" placeholder="*Phone/whatsapp" required><br>
+        <textarea name="" id="" placeholder="*Message" required></textarea><br>
+        <button type="submit"><i class="fa fa-paper-plane"></i> SEND</button>
+    </form>
+    
+    </div>
+
+
+    <script>
+
+        var close=document.querySelector('.close');
+        close.addEventListener('click', ()=>{
+
+            history.go(-1);
+
+
+
+        })
+
+    </script>
+
+</body>
+</html>
