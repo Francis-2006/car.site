@@ -547,7 +547,7 @@ marquee{
 }
 @media(min-width:320px){
     header{
-        gap: 10rem;
+        gap: 7rem;
     }
     .menuToggle{
         margin-left: -35rem;
@@ -558,7 +558,22 @@ marquee{
         grid-gap:1rem ;
     }
     .fa-bars{
-        margin-left: 0rem;
+        margin-left: -3rem;
+    }
+    .logos{
+    grid-gap:1.6rem;
+    }
+    .pannel{
+        width: 95%;
+    }
+    .serve img{
+    width: 15rem;
+    }
+    input{
+        width: 2rem;
+    }
+    textarea{
+        width: 20rem;
     }
 }
 @media(min-width:470px){
@@ -614,7 +629,7 @@ marquee{
 }
 @media(min-width:740px){
     .fa-bars{
-        margin-left: 26rem;
+        margin-left: 20rem;
     }
     .logos{
         grid: auto/auto auto auto auto auto auto;
@@ -639,7 +654,7 @@ marquee{
 }
 @media(min-width:832px){
     .fa-bars{
-        margin-left: 36rem;
+        margin-left: 30rem;
     }
     .discount img{
         height: 40rem;
@@ -665,9 +680,7 @@ marquee{
     }
 }
 @media(min-width:1000px){
-    .fa-bars{
-        margin-left: 50rem;
-    }  
+   
     .pannel{
     /* right: 0; */
     top: 33%;
@@ -695,10 +708,10 @@ marquee{
         grid: auto/auto auto auto auto;
     }
     .serve img{
-        width: 25rem;
+        width: 20rem;
     }
     .fa-bars{
-        margin-left: 60rem;
+        margin-left: 40rem;
     }
 }
 @media(min-width:1280px) {
